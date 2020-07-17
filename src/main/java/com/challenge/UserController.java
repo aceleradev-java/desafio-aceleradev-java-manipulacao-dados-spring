@@ -40,4 +40,8 @@ public class UserController {
         return this.userService.findByAccelerationName(nomeDaAceleracao);
     }
 
+    @GetMapping("/findByCompanyId/{id}")
+    public List<User> findByCompanyId(@PathVariable("id") Long id) {
+        return this.userService.findByCompanyId(id);
+    }
 }

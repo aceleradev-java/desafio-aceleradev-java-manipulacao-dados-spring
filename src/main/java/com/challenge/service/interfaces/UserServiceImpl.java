@@ -38,8 +38,7 @@ public class UserServiceImpl implements UserServiceInterface {
 
     @Override
     public List<User> findByCompanyId(Long companyId) {
-//        return this.userRepository.findByCompanyId(companyId);
-        return null;
+        return this.userRepository.findByCompanyId(companyId);
     }
 
 }

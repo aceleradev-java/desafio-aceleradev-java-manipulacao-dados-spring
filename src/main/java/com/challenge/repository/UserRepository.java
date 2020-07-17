@@ -21,4 +21,12 @@ public interface UserRepository extends CrudRepository<User, Long> {
             "where a.name like %:name%", nativeQuery = true)
     List<User> findByAccelerationName(@Param("name") String name);
     
+    @Query(value = "select * from users u " +
+            "INNER JOIN candidate c " +
+            "ON u.id = c.user_id " +
+            "INNER JOIN acceleration a " +
+            "ON a.id = c.acceleration_id " +
+            "where c.company_id = :idCompany", nativeQuery = true)
+    List<User> findByCompanyId(@Param("idCompany") Long id);
+    
 }
