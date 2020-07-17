@@ -1,11 +1,14 @@
 package com.challenge.service.interfaces;
 
-import com.challenge.entity.Challenge;
-
 import java.util.List;
 
+import com.challenge.entity.Challenge;
+
 public interface ChallengeServiceInterface extends ServiceInterface<Challenge> {
-
-    List<Challenge> findByAccelerationIdAndUserId(Long accelerationId, Long userId);
-
+    
+    List<Challenge> findAll();
+   
+    List<Challenge> findAllByAccelerationsIdAndSubmissionsUserId(Long idAcceleration, Long userId);
+    
+    Challenge save(Challenge challenge);
 }
