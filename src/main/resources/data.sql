@@ -6,13 +6,23 @@ insert into users ( email , full_name , nickname , password ) values ('email5@em
 insert into users ( email , full_name , nickname , password ) values ('email6@email.com', 'name full 6', 'nick6', '1236');
 insert into users ( email , full_name , nickname , password ) values ('email7@email.com', 'name full 7', 'nick7', '1237');
 
-insert into acceleration (name, slug) values ('acc 1', 'aaa');
-insert into acceleration (name, slug) values ('acc 2', '22222');
+insert into challenge ( name, slug) values ('challenge 1', 'slugcha1');
+insert into challenge ( name, slug) values ('challenge 2', 'slugcha2');
+insert into challenge ( name, slug) values ('challenge 3', 'slugcha3');
+insert into challenge ( name, slug) values ('challenge 4', 'slugcha4');
+insert into challenge ( name, slug) values ('challenge 5', 'slugcha5');
+
+insert into acceleration (name, slug, challenge_id) values ('acc1', 'aaa', 1);
+insert into acceleration (name, slug, challenge_id) values ('acc2', '22222', 2);
+insert into acceleration (name, slug, challenge_id) values ('acc3', '333', 3);
 
 
 insert into company  (name, slug) values ('company 1', 'c111');
 insert into company  (name, slug) values ('company 2', 'c222');
+insert into company  (name, slug) values ('company 3', 'c333');
+insert into company  (name, slug) values ('company 4', 'c444');
 
 insert into candidate   (user_id , company_id , acceleration_id , status ) values (1,1,1,1);
 insert into candidate   (user_id , company_id , acceleration_id , status ) values (1,1,2,1);
-insert into candidate   (user_id , company_id , acceleration_id , status ) values (2,2,1,1);
+insert into candidate   (user_id , company_id , acceleration_id , status ) values (2,3,1,1);
+insert into candidate   (user_id , company_id , acceleration_id , status ) values (2,4,1,1);
