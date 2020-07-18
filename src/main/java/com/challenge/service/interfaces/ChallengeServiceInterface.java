@@ -8,7 +8,7 @@ public interface ChallengeServiceInterface extends ServiceInterface<Challenge> {
     
     List<Challenge> findAll();
    
-    List<Challenge> findAllByAccelerationsIdAndSubmissionsUserId(Long idAcceleration, Long userId);
+    List<Challenge> findByAccelerationIdAndUserId(Long idAcceleration, Long userId);
     
     Challenge save(Challenge challenge);
 }

@@ -35,6 +35,6 @@ public class ChallengeController {
             @PathVariable("idAcelleration") Long id, 
             @PathVariable("idUser") Long idUser
             ) {
-        return this.challengeService.findAllByAccelerationsIdAndSubmissionsUserId(id,idUser);
+        return this.challengeService.findByAccelerationIdAndUserId(id,idUser);
     }
 }

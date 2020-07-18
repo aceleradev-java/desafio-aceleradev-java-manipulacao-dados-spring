@@ -23,7 +23,7 @@ public class ChallengeServiceImpl implements ChallengeServiceInterface {
     }
 
     @Override
-    public List<Challenge> findAllByAccelerationsIdAndSubmissionsUserId(Long idAcceleration, Long userId) {
+    public List<Challenge> findByAccelerationIdAndUserId(Long idAcceleration, Long userId) {
         return this.challengeRepository.findAllByAccelerationsIdAndSubmissionsIdUserId(idAcceleration, userId);
     }
 }
