@@ -12,17 +12,25 @@ insert into challenge ( name, slug) values ('challenge 3', 'slugcha3');
 insert into challenge ( name, slug) values ('challenge 4', 'slugcha4');
 insert into challenge ( name, slug) values ('challenge 5', 'slugcha5');
 
+insert into submission ( score, user_id , challenge_id ) values (90, 1, 1);
+insert into submission ( score, user_id , challenge_id ) values (90, 1, 2);
+insert into submission ( score, user_id , challenge_id ) values (92, 3, 3);
+insert into submission ( score, user_id , challenge_id ) values (93, 2, 3);
+insert into submission ( score, user_id , challenge_id ) values (70, 3, 1);
+
 insert into acceleration (name, slug, challenge_id) values ('acc1', 'aaa', 1);
 insert into acceleration (name, slug, challenge_id) values ('acc2', '22222', 2);
 insert into acceleration (name, slug, challenge_id) values ('acc3', '333', 3);
+insert into acceleration (name, slug, challenge_id) values ('acc4', '444', 4);
+insert into acceleration (name, slug, challenge_id) values ('acc5', '555', 1);
 
+insert into company (name, slug) values ('company 1', 'c111');
+insert into company (name, slug) values ('company 2', 'c222');
+insert into company (name, slug) values ('company 3', 'c333');
+insert into company (name, slug) values ('company 4', 'c444');
 
-insert into company  (name, slug) values ('company 1', 'c111');
-insert into company  (name, slug) values ('company 2', 'c222');
-insert into company  (name, slug) values ('company 3', 'c333');
-insert into company  (name, slug) values ('company 4', 'c444');
-
-insert into candidate   (user_id , company_id , acceleration_id , status ) values (1,1,1,1);
-insert into candidate   (user_id , company_id , acceleration_id , status ) values (1,1,2,1);
-insert into candidate   (user_id , company_id , acceleration_id , status ) values (2,3,1,1);
-insert into candidate   (user_id , company_id , acceleration_id , status ) values (2,4,1,1);
+insert into candidate (user_id , company_id , acceleration_id , status ) values (1,1,1,1);
+insert into candidate (user_id , company_id , acceleration_id , status ) values (1,1,2,1);
+insert into candidate (user_id , company_id , acceleration_id , status ) values (2,3,4,1);
+insert into candidate (user_id , company_id , acceleration_id , status ) values (2,4,3,1);
+insert into candidate (user_id , company_id , acceleration_id , status ) values (4,1,3,1);
