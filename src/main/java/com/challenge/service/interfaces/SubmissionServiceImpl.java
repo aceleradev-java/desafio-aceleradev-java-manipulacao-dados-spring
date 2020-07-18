@@ -27,7 +27,8 @@ public class SubmissionServiceImpl implements SubmissionServiceInterface {
 
     @Override
     public BigDecimal findHigherScoreByChallengeId(Long challengeId) {
-        return this.submissionRepository.findHigherScoreByChallengeId(challengeId);
+        BigDecimal higherScore = this.submissionRepository.findHigherScoreByChallengeId(challengeId);
+        return higherScore == null ? BigDecimal.ZERO : higherScore;
     }
 
     @Override
