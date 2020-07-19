@@ -34,3 +34,4 @@ insert into candidate (user_id , company_id , acceleration_id , status ) values 
 insert into candidate (user_id , company_id , acceleration_id , status ) values (2,3,4,1);
 insert into candidate (user_id , company_id , acceleration_id , status ) values (2,4,3,1);
 insert into candidate (user_id , company_id , acceleration_id , status ) values (4,1,3,1);
+insert into candidate (user_id , company_id , acceleration_id , status ) values (3,1,1,1);

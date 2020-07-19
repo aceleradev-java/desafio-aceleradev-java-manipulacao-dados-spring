@@ -13,7 +13,7 @@ public interface CompanyRepository extends CrudRepository<Company, Long> {
     
     Optional<Company> findById(Long id);
     
-    List<Company> findAllByCandidatesIdAccelerationId(Long accelarationId);
+    List<Company> findDistinctByCandidatesIdAccelerationId(Long accelarationId);
     
     List<Company> findAllByCandidatesIdUserId(Long userId);
 }

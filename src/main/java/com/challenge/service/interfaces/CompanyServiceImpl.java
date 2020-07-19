@@ -32,7 +32,7 @@ public class CompanyServiceImpl implements CompanyServiceInterface {
 
     @Override
     public List<Company> findByAccelerationId(Long accelerationId) {
-        return this.companyRepository.findAllByCandidatesIdAccelerationId(accelerationId);
+        return this.companyRepository.findDistinctByCandidatesIdAccelerationId(accelerationId);
     }
 
     @Override
