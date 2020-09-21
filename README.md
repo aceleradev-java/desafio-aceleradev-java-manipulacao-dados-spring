@@ -1,5 +1,23 @@
 # Manipulação de dados com Spring
 
+<p>
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/aceleradev-java/desafio-aceleradev-java-manipulacao-dados-spring">
+    <a href="https://github.com/aceleradev-java/desafio-aceleradev-java-manipulacao-dados-spring">
+        <img alt="Made by" src="https://img.shields.io/badge/made%20by-adriano%20avelino-gree">
+    </a>
+    <img alt="Repository size" src="https://img.shields.io/github/repo-size/aceleradev-java/desafio-aceleradev-java-manipulacao-dados-spring">
+    <a href="https://github.com/EliasGcf/readme-template/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/aceleradev-java/desafio-aceleradev-java-manipulacao-dados-spring">
+    </a>
+</p>
+
+O Aceleradev é um treinamento da Codenation com duração de 10 semanas de imersão em programação, no meu caso, Java online. Esse é o desafio do - quiunto módulo que tem como conteúdo:
+- SQL (INSERT, SELECT, UPDATE, DELETE)
+- Maninpulação de Dados com Hibernate
+- Manipulação de Dados Spring Boot/Data
+
+## Desafio (Manipulação de dados com Spring)
+
 Neste desafio você receberá um projeto Maven pré-configurado com Springboot, Spring-JPA e banco de dados H2. Este projeto também contém as classes de entidade `entity` já criadas para o Modelo de Entidade Relacionamento abaixo:
 
 [Clique aqui para visualizar o modelo de entidade relacionamento](https://codenation-challenges.s3-us-west-1.amazonaws.com/java-10/codenation-sample-2.png)
